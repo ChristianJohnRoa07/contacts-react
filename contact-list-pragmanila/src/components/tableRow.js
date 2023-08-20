@@ -7,14 +7,7 @@ import { deleteUser } from "../redux/counterSlice";
 function tableRow(props) {
   const { dispatch, userList } = props;
 
-  // if (editUserModal === true)
-  //   return (
-  //     <EditUserModal
 
-  //       //onClose={() => showEditUserModal(false)}
-  //       //editUserModal={editUserModal}
-  //     />
-  //   );
 
   const deleteUserFromTable = (id) => {
     dispatch(deleteUser({id}));

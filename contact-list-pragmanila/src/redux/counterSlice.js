@@ -49,7 +49,7 @@ const userSlice = createSlice({
   reducers: {
     addUser: (state, action) => {
       state.push(action.payload);
-      // console.log(action);
+      
     },
     editUser: (state, action) => {
       const { id, firstName, middleName, lastName, phoneNumber, email } =
@@ -65,10 +65,10 @@ const userSlice = createSlice({
       }
     },
     deleteUser: (state, action) => {
-      // console.log("delete " + action.payload);
+      
       const { id } = action.payload;
       const userExisting = state.find((user) => user.id === id);
-      //state.splice(deleteId, 1);
+      
       if (userExisting) {
         return state.filter((user) => user.id !== id);
       }

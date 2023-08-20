@@ -9,58 +9,17 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 
 function Homepage() {
-  // const userList = [
-  //   {
-  //     id: 1,
-  //     firstName: "Theresh Mae",
-  //     middleName: "Ramos",
-  //     lastName: "Epino",
-  //     phoneNumber: "09123456789",
-  //     email: "thrmsmae@gmail.com",
-  //   },
-  //   {
-  //     id: 2,
-  //     firstName: "Christian John",
-  //     middleName: "Dery",
-  //     lastName: "Roa",
-  //     phoneNumber: "09424566332",
-  //     email: "roacj@gmail.com",
-  //   },
-  //   {
-  //     id: 3,
-  //     firstName: "Cristine Joy",
-  //     middleName: "Dery",
-  //     lastName: "Roa",
-  //     phoneNumber: "09432565433",
-  //     email: "tinroa@gmail.com",
-  //   },
-  //   {
-  //     id: 4,
-  //     firstName: "Cristy",
-  //     middleName: "Dery",
-  //     lastName: "Roa",
-  //     phoneNumber: "09643213564",
-  //     email: "cristyroa@gmail.com",
-  //   },
-  //   {
-  //     id: 5,
-  //     firstName: "Josepino",
-  //     middleName: "Dery",
-  //     lastName: "Roa",
-  //     phoneNumber: "09232454324",
-  //     email: "jroa@gmail.com",
-  //   },
-  // ];
+ 
 
   const [addUserModal, showAddUserModal] = useState(false);
-  //const [editUserModal, showEditUserModal] = useState(false);
+  
 
   const userList = useSelector((store) => store.users);
 
   const nav = useNavigate();
   const dispatch = useDispatch();
 
-  //console.log(userList);
+  
 
   return (
     <div>
@@ -69,7 +28,7 @@ function Homepage() {
           className="px-5 py-2  bg-gray-800 text-slate-50 rounded-full font-semibold"
           onClick={() => {
             showAddUserModal(true);
-            //nav("/add-User");
+           
           }}
         >
           Add User
